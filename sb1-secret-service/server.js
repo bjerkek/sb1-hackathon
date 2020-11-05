@@ -3,7 +3,6 @@ const app = express();
 require('dotenv').config();
 
 app.get('/', (req, res) => {
-  const myAPIKey = 'process.env.MYAPIKEY';
   res.send('Hello from SpareBank 1 Hackathon from ' + process.env.HACKATHON_SECRET);
 });
 
